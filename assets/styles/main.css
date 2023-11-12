@@ -1,0 +1,141 @@
+*{box-sizing: border-box;}
+
+html {
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(108, 56, 146);
+}
+
+header nav ul{
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    float: left;
+    text-align: center;
+    margin-top: 0;
+    padding: 14px 16px;
+    background-color: rgb(108, 56, 146);
+    color: white;   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: auto;
+
+    background-image: url("../images/backdrop.png");
+    background-size: 30%;
+    background-repeat: repeat-y repeat-x;
+}
+
+.banner {
+    border-radius: 0 0 5% 5%;
+    padding-bottom: 15em;
+    padding-top: 4em;
+
+    text-align: center;
+    text-shadow: 1px 1px 1px #333;
+    color: white;
+
+    background-image: url("../images/banner.jpg"), linear-gradient( 135deg, #9913ec69 10%, #f370296b 100%);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.banner h1 {
+    font-family: 'Kaushan Script';
+    font-size: 80px;
+    margin-bottom: 1em;
+}
+
+.wrapper {
+    display: block;
+    position: absolute;
+    top: 60%;
+    margin: 1em 18%;
+    padding: 5%;
+    
+    border-radius: 5% 5% 0 0;
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.content-grid-item {
+    width: 100%;
+    margin: 0 auto;
+
+    text-align: center;
+    
+    color: black;   
+}
+
+.content-grid-item h2 {
+    font-family: 'Kaushan Script';
+    margin-bottom: 0;
+}
+
+.main-pfp {
+    border-radius: 10%;
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    transition: .5s ease;
+    background-color: white;
+}
+
+.overlay p, .overlay h2 {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.content-grid-item:hover .overlay, .content-grid-item:hover .overlay *{
+    opacity: 1; 
+}
+
+hr {
+    width: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border: none;
+    border-bottom: 5px dotted #f370296b;
+}
+
+a {
+    border-radius: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    order: 2;
+
+    background-image: linear-gradient( 135deg, #9913ec69 10%, #f370296b 100%);
+    color: white;
+    text-decoration: none;
+}
