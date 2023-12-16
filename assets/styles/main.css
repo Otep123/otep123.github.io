@@ -62,7 +62,7 @@ body {
 .banner h1 {
     font-family: 'Kaushan Script';
     font-size: 80px;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .wrapper {
@@ -75,6 +75,73 @@ body {
     border-radius: 5% 5% 0 0;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
     background-color: white;
+}
+
+/* LETTERS */
+.postcard-block {
+    position: relative;
+    text-align: center;
+}
+
+.postcard-block img {
+    padding: 2% 2% 10% 2%;
+    background-color: white;
+    box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.3);
+}
+
+.postcard-block .paperclip {
+    box-shadow: none;
+    background-color: transparent;
+    width: 14%;
+    position: absolute;
+    top: -3vh;
+    right: 13.5vw;
+}
+
+.wrapper-letter {
+    display: block;
+    position: absolute;
+    top: 60%;
+    margin: 1em 18%;
+    padding: 5%;
+    
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+    background-color: #f6eee3;
+}
+
+.postcard {
+    transform: rotate(2deg);
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+    margin: auto;
+}
+
+.content-letter {
+    display: block;
+}
+
+.content-letter h2 {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+
+.content-letter p {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 25px;
+    text-indent: 30px;
+    line-height: 2;
+    letter-spacing: 0.6px;
+    text-align: justify;
+}
+
+.content-letter .regards-p {
+    margin-top: 60px;
+    text-align: right;
+    line-height: 1;
 }
 
 .content-grid {
@@ -130,12 +197,6 @@ hr {
 }
 
 a {
-    border-radius: 1em;
-    margin-top: 2em;
-    padding: 1em;
-    order: 2;
-
-    background-image: linear-gradient( 135deg, #9913ec69 10%, #f370296b 100%);
-    color: white;
+    color: black;
     text-decoration: none;
 }
