@@ -6,29 +6,26 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
+nav {
     position: fixed;
-    overflow: hidden;
-    inset: 0;
+    z-index: 2;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
     width: 100vw;
-    height: fit-content;
-    background-color: rgb(108, 56, 146);
+  }
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    display: inline-block;
 }
 
-header nav ul{
-    list-style-type: none;
-    top: 0;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li a {
-    float: left;
-    text-align: center;
-    margin-top: 0;
-    padding: 14px 16px;
-    background-color: rgb(108, 56, 146);
-    color: white;   
+nav a:hover {
+    transition-duration: 500ms;
+    background-color: #555;
 }
 
 body {
@@ -68,11 +65,11 @@ body {
 .wrapper {
     display: block;
     position: absolute;
-    top: 60%;
-    margin: 1em 18%;
+    top: 50%;
+    margin: 0 18%;
     padding: 5%;
     
-    border-radius: 5% 5% 0 0;
+    border-radius: 3%;
     box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
     background-color: white;
 }
@@ -101,7 +98,7 @@ body {
 .wrapper-letter {
     display: block;
     position: absolute;
-    top: 60%;
+    top: 40%;
     margin: 1em 18%;
     padding: 5%;
     
@@ -144,6 +141,86 @@ body {
     line-height: 1;
 }
 
+.content-center {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-center p {
+    font-family: 'Just Another Hand';
+    font-size: 30px;
+}
+
+.content-center .main-desc {
+    text-align: center;
+}
+
+.content-center img {
+    padding: 5% 5% 20% 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    background-color: white;
+    box-shadow: 1px 1px 23px rgba(0,0,0,0.5);
+    object-fit: cover;
+    width: 300px;
+    height: 350px;
+}
+
+.content-center h1 {
+    font-family: 'Kaushan Script';
+}
+
+.content-center p {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.content-center .item {
+
+    margin-bottom: 40px;
+
+    img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .rotate-right {
+        transform: rotate(2deg);
+    }
+
+    .rotate-left {
+        transform: rotate(-2deg);
+    }
+
+    .rtl {
+        direction: rtl;
+    }
+
+    .ltr {
+        direction: ltr;
+    }
+
+    .item-text {
+        padding-right: 20px;
+        text-align: justify; 
+    }
+
+    .item-text h2 {
+        font-family: 'Just Another Hand';
+        font-weight: normal;
+        font-size: 30px;
+    }
+}
+
 .content-grid {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -158,7 +235,7 @@ body {
     color: black;   
 }
 
-.content-grid-item h2 {
+.content-grid-item h2, .content-center h2 {
     font-family: 'Kaushan Script';
     margin-bottom: 0;
 }
